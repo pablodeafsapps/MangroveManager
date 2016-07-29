@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.deafsapps.mangrovemanager">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <activity
+            android:name=".utils.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MangroverMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name=".db.DBProvider"
+            android:authorities="org.deafsapps.mangrovemanager"
+            android:exported="false" />
+
+        <!-- ################################################################################## -->
+        <!-- La siguiente sentencia debe declararse después de cualquier entidad implicada (activity, service... -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+        <!-- ################################################################################## -->
+    </application>
+
+</manifest>

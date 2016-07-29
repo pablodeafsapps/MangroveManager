@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_table_lookup"
+        android:orderInCategory="100"
+        compat:showAsAction="always"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_table_lookup"/>
+    <item
+        android:id="@+id/action_table_previous"
+        android:orderInCategory="100"
+        compat:showAsAction="always"
+        android:icon="@drawable/ic_action_previous_item"
+        android:title="@string/action_table_previous"/>
+    <item
+        android:id="@+id/action_table_next"
+        android:orderInCategory="100"
+        compat:showAsAction="always"
+        android:icon="@drawable/ic_action_next_item"
+        android:title="@string/action_table_next"/>
+    <item
+        android:id="@+id/action_app_about"
+        android:orderInCategory="100"
+        compat:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_about"
+        android:title="@string/action_app_about"/>
+
+</menu>

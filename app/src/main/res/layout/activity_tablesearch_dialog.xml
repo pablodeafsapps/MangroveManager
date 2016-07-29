@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.TablesearchDialog" >
+    
+    <TableLayout
+        android:id="@+id/TableLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+        
+    <TableRow>
+
+	    <TextView
+	        android:id="@+id/textViewSearch_id"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Id: "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/editTextSearch_id"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:ems="10"
+	        android:inputType="number"
+	        android:hint="Numeric 'id'..." />
+	    
+	</TableRow>
+	
+    <TableRow android:gravity="center" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+    </TableRow>   
+                
+	<TableRow>
+
+	    <TextView
+	        android:id="@+id/textViewSearch_tag"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Tag: "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/editTextSearch_tag"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:ems="10"
+	        android:inputType="number"
+			android:hint="Numeric 'tag'..." />
+	    	    
+	</TableRow>
+	
+	    <TableRow android:gravity="center" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+    </TableRow>   
+	
+	<TableRow android:gravity="center" >
+
+	    <TextView
+	        android:id="@+id/textViewSearch_species"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Species: "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />	    
+
+	    <Spinner
+	        android:id="@+id/spinnerSearch_species"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:entries="@array/species"
+            android:prompt="@string/species_prompt" />
+	    
+	</TableRow>
+	<TableRow>		    	
+
+	    <TextView
+	        android:id="@+id/textViewSearch_zmsl"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:gravity="center"
+	        android:text="Z msl > "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <SeekBar
+	        android:id="@+id/seekBarSearch_zmsl"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3" />
+
+	    <TextView
+	        android:id="@+id/textViewSearch_zmslMeasure"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.5"
+	        android:gravity="center"
+	        android:text="0"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".5"
+	        android:text="m"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+	</TableRow>
+	<TableRow>	    
+
+	    <TextView
+	        android:id="@+id/textViewSearch_dbh"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:gravity="center"
+	        android:text="DBH > "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <SeekBar
+	        android:id="@+id/seekBarSearch_dbh"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3" />
+
+	    <TextView
+	        android:id="@+id/textViewSearch_dbhMeasure"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.5"
+	        android:gravity="center"
+	        android:text="0"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".5"
+	        android:text="cm" />
+	    
+	</TableRow>
+	
+	<TableRow android:gravity="center" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+    </TableRow>  
+
+	<TableRow
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+	    
+		    <Button
+	            android:id="@+id/buttonSearch_ok"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/button_about_dialog" />
+	        <Button
+	            android:id="@+id/buttonSearch_cancel"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/button_dialog_cancel" />
+	    </LinearLayout>	    
+	</TableRow>
+	</TableLayout>
+	
+</RelativeLayout>

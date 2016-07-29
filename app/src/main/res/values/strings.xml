@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">Mangrove Manager</string> -->
+    <string name="app_name">Mangrove Manager</string>
+    <string name="title_activity_mangrover_table">Data Table</string>
+    <string name="title_activity_mangrover_map">Data Map</string>
+    <string name="map_api_key">AIzaSyBSrn4MKW-_wfN47brb1ovvKM1CR9sZPGM</string>
+    <string name="title_activity_marker_dialog">MarkerDialog</string>
+    <string name="title_activity_legend_dialog">LegendDialog</string>
+    <string name="button_about_dialog">OK</string><string name="button_dialog_save">Save</string>
+    <string name="button_dialog_cancel">Cancel</string>
+    <string name="text_view_id">"  Id*  "</string>
+    <string name="text_view_tag">"     Tag*     "</string>
+    <string name="text_view_lat">"    Latitud*    "</string>
+    <string name="text_view_long">"     Longitud*     "</string>
+    <string name="text_view_zmsl">"     Z MSL*     "</string>
+    <string name="text_view_species">"   Species*   "</string>
+    <string name="text_view_dbh">"   DBH*   "</string>
+    <string name="text_view_extras">"              Comments              "</string>
+    <string name="action_table_lookup">Search entry</string>
+    <string name="action_table_previous">Previous page</string>
+    <string name="action_table_next">Next page</string>
+    <string name="action_app_about">About Mangrove Manager</string>
+    <string name="action_centre_map">Centre Map</string>
+    <string name="action_map_legend">Map Legend</string>
+    <string name="title_activity_about_dialog">AboutDialog</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_view_dialog_about">Mangrove Manager is a freeware app created by deafsApps in collaboration with a bunch of ecology researchers</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_tablesearch_dialog">TableSearchDialog</string>
+    <string name="species_prompt">Choose species</string>
+    <string-array name="species">
+        <item>N/A</item>
+        <item>AA</item>
+        <item>AO</item>
+        <item>AR</item>
+        <item>BC</item>
+        <item>BG</item>
+        <item>EA</item>
+        <item>HL</item>
+        <item>LR</item>
+        <item>Nypa</item>
+        <item>RA</item>
+        <item>RM</item>
+        <item>SA</item>
+        <item>SO</item>
+        <item>XG</item>
+        <item>CT</item>        
+    </string-array>    
+
+</resources>

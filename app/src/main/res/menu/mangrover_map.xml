@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_centre_map"
+        android:orderInCategory="1"
+        compat:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_centremap"
+        android:title="@string/action_centre_map"/>
+    <item
+        android:id="@+id/action_map_legend"
+        android:orderInCategory="2"
+        compat:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_maplegend"
+        android:title="@string/action_map_legend"/>
+
+</menu>

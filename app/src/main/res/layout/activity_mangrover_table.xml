@@ -1,0 +1,160 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    android:scrollbars="horizontal"
+    tools:context=".activities.MangroverMain" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >        
+        
+        <TableLayout
+            android:id="@+id/table_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TableRow
+                android:background="#ffcccccc" >
+                <TextView
+                    android:id="@+id/tableHeader_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_id"                    
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_tag"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_lat"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+					android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:padding="4dp"
+                    android:text="@string/text_view_long"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Zmsl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_zmsl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Species"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_species"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Dbh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_dbh"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background" />
+                <TextView
+                    android:id="@+id/tableHeader_Extras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/text_view_extras"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+        
+        <ScrollView
+            android:id="@+id/tableScrollView"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_below="@id/table_Header"
+    		android:scrollbars="vertical" >
+                        
+            <TableLayout
+                android:id="@+id/table_Principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >                
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                    	android:text="@string/text_view_id"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                    	android:text="@string/text_view_tag"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                    	android:text="@string/text_view_lat"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+						android:padding="4dp"
+                    	android:text="@string/text_view_long"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />                	
+                   	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                    	android:text="@string/text_view_zmsl"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                   	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                  		android:text="@string/text_view_species"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                   	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+                    	android:text="@string/text_view_dbh"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                   	<TextView
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="0dp"
+                    	android:padding="4dp"
+	                    android:text="@string/text_view_extras"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+            	</TableRow>            	                               
+             </TableLayout>
+             
+         </ScrollView>
+         
+    </RelativeLayout>
+    
+</HorizontalScrollView>
