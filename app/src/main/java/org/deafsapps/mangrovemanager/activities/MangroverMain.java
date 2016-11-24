@@ -141,7 +141,7 @@ public class MangroverMain extends ActionBarActivity implements TabListener, OnP
 	@Override
 	public void onTableNewSearch(ArrayList<MangroveTree> mTree)
 	{
-		this.mActivity2MapListener.onActivity2Fragment_plus(mTree);
+//		this.mActivity2MapListener.onActivity2Fragment_plus(mTree);
 	}
 
 	@Override
